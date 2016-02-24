@@ -10,7 +10,7 @@ var server=require('http').createServer(function(req,res){
   var host= req.headers.host;
   switch(host){
     case 'blogend.yofoon.com':
-          proxy.web(req,res,{target:'http://localhost:8000'});
+          proxy.web(req,res,{target:'http://127.0.0.1:8000'});
     break;
     default: 
       res.writeHead(200, { 
