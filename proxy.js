@@ -14,10 +14,10 @@ var server=require('http').createServer(function(req,res){
     break;
     default: 
       proxy.web(req,res,{target:'http://127.0.0.1:8000'});
-      res.writeHead(200, { 
+      /*res.writeHead(200, { 
         'Content-Type': 'text/plain' 
       });
-      res.end('Welcome to my server!');
+      res.end('Welcome to my server!');*/
   }
 });
 
